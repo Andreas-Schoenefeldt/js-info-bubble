@@ -1,3 +1,5 @@
+"use strict";
+
 // ==ClosureCompiler==
 // @compilation_level ADVANCED_OPTIMIZATIONS
 // @externs_url https://raw.githubusercontent.com/google/closure-compiler/master/contrib/externs/maps/google_maps_api_v3_16.js
@@ -1528,8 +1530,6 @@ InfoBubble.prototype.removeTab = function(index) {
 
   this.tabs_.splice(index, 1);
 
-  delete tab;
-
   for (var i = 0, t; t = this.tabs_[i]; i++) {
     t.tab.index = i;
   }
@@ -1778,3 +1778,5 @@ InfoBubble.prototype.positionCloseButton_ = function() {
   this.close_.style['right'] = this.px(right);
   this.close_.style['top'] = this.px(top);
 };
+
+export default InfoBubble;
