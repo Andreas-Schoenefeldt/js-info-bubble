@@ -1593,7 +1593,6 @@ InfoBubble.prototype.getElementSize_ = function(element, opt_maxWidth,
   }
 
   document.body.removeChild(sizer);
-  delete sizer;
   return size;
 };
 
