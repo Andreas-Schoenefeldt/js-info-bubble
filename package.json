@@ -1,6 +1,6 @@
 {
   "name": "js-info-bubble",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "A library to create customizable CSS3-based InfoWindows",
   "main": "src/infobubble.js",
   "directories": {

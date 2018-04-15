@@ -1,14 +1,9 @@
 "use strict";
 
-// ==ClosureCompiler==
-// @compilation_level ADVANCED_OPTIMIZATIONS
-// @externs_url https://raw.githubusercontent.com/google/closure-compiler/master/contrib/externs/maps/google_maps_api_v3_16.js
-// ==/ClosureCompiler==
-
 /**
  * @name CSS3 InfoBubble with tabs for Google Maps API V3
  * @version 0.8
- * @author Luke Mahe
+ * @author Luke Mahe, Andreas Schönefeldt
  * @fileoverview
  * This library is a CSS Infobubble with tabs. It uses css3 rounded corners and
  * drop shadows and animations. It also allows tabs
@@ -240,6 +235,7 @@ InfoBubble.prototype.buildDom_ = function() {
   contentContainer.style['cursor'] = 'default';
   contentContainer.style['clear'] = 'both';
   contentContainer.style['position'] = 'relative';
+  contentContainer.className = 'js-info-bubble-container';
 
   var content = this.content_ = document.createElement('DIV');
   contentContainer.appendChild(content);
